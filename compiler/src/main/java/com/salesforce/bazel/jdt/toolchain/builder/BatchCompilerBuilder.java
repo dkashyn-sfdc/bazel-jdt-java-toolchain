@@ -207,7 +207,6 @@ public class BatchCompilerBuilder implements AutoCloseable {
                     commandLineBuilder.append(optionsParser.getEclipsePreferencesFile().get()).append(" ");
                 }
             }
-            commandLineBuilder.append("-Xemacs ");
             // Compile using only the direct dependencies, if requested to. Otherwise use the full set of direct
             // and indirect dependencies.
             if (optionsParser.getUseDirectDepsOnly().orElse(false) && !optionsParser.getDirectJars().isEmpty()) {
